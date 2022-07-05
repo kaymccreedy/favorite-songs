@@ -1,7 +1,7 @@
 class SongsController < ApplicationController
 
   def index
-    songs = Song.order("id")
+    songs = Song.order(params["sort"]) || Song.order("id")
     render json: songs.as_json
   end
 

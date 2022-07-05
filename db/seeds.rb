@@ -12,3 +12,11 @@ Song.create(title: "Kissing the Lipless", album: "Chutes Too Narrow", artist: "T
 Song.create(title: "Crawlspace", album: "This Dungeon Earth", artist: "Chat Pile", year: 2019)
 Song.create(title: "Ja Funmi", album: "Juju Music", artist: "King Sunny Ade", year: 1982)
 Song.create(title: "Lavatera", album: "In Her Garden", artist: "Colour Haze", year: 2017)
+
+20.times do
+  title = FFaker::Music.song
+  album = FFaker::Music.album
+  artist = FFaker::Music.artist
+  year = FFaker::Vehicle.year
+  Song.create(title: title, album: album, artist: artist, year: year)
+end

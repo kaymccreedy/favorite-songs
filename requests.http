@@ -9,7 +9,7 @@ Content-Type: application/json
   "title": "Karmic Dream Sequence",
   "album": "Begin",
   "artist": "The Millenium",
-  "year": 1967
+  "year": "dog"
 }
 
 ### Songs Show
@@ -21,6 +21,14 @@ Content-Type: application/json
 
 {
   "title": "Gone For Good"
+}
+
+### Songs Update
+PATCH http://localhost:3000/songs/5.json
+Content-Type: application/json
+
+{
+  "year": 1968
 }
 
 ### Songs Destroy
