@@ -1,0 +1,27 @@
+### Songs Index
+GET http://localhost:3000/songs.json
+
+### Songs Create
+POST http://localhost:3000/songs
+Content-Type: application/json
+
+{
+  "title": "Karmic Dream Sequence",
+  "album": "Begin",
+  "artist": "The Millenium",
+  "year": 1967
+}
+
+### Songs Show
+GET http://localhost:3000/songs/1.json
+
+### Songs Update
+PATCH http://localhost:3000/songs/1.json
+Content-Type: application/json
+
+{
+  "title": "Gone For Good"
+}
+
+### Songs Destroy
+DELETE http://localhost:3000/songs/4.json
